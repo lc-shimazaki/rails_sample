@@ -1,6 +1,8 @@
 class BoardsController < ApplicationController
   def index
   end
-  def path
+
+  def new
+    @board = Board.new
   end
 end
