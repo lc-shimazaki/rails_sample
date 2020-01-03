@@ -9,4 +9,10 @@ if Rails.env == 'development'
   (1..50).each do |i|
     Board.create(name: "User#{i}", title: "Title#{i}", body: "description\nNo.#{i}")
   end
+
+  Tag.create([
+    { name: 'Ruby' },
+    { name: 'Ruby on Rails' },
+    { name: 'Python' }
+  ])
 end
